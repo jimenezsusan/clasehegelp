@@ -1,0 +1,70 @@
+/* GENERAL STYLES */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+     font-family: "Space Mono", monospace;
+     font-weight: 400;
+     font-style: normal;
+     background-color:#9EF0C8 
+}
+
+/* HEADER STYLES */
+
+header h1,header p{ /*que es*/
+text-align:center ;
+margin:0 ;
+padding:0 ;
+}
+header h1{ 
+    color: #74C5ED;
+    -webkit-text-stroke: 3px #000;
+    font-size: 64px;
+/*letter-spacing separar letras(text-alging:justify) justificar texto*/
+}
+nav ul{/*a donde va dirigido*/
+    list-style-type:none ;/*quitar viñetas*/
+    margin:0;
+    padding:8px ;
+    display:flex ;/*acomodo a la izquierda*/
+    justify-content:center ;/*horizontal*/
+    align-items:center ;/*en el centro (baseling)*/
+    flex-wrap: wrap;/*para que se adapte al celular*/
+}
+nav ul li a{
+    background-color:white;
+    text-decoration:none ;/*quiotar el subrayado*/
+    color:black;
+    display: block;
+    margin:4px ;
+    padding:2px ;
+    border:2px solid black ;
+    border-radius:2px;
+    box-shadow: 2px 2px #C974ED;/*borde de color*/
+}
+/*Obra Styles*/
+.obras{
+    display: flex;/*ponerlos en fila*/
+    justify-content: center;/*centrar*/
+    gap:20px ;/*separar las obras*/
+    flex-wrap: wrap;/*para que se ajusten al celular (se bajen solas)*/
+    padding:20px ;
+}
+.obra{
+    display: flex;/*imagen a la izquiera y texto a la derecha*/
+    flex-direction: column;/*en columna, imagen arriba y texto abajo---flex-direction:row-reverse*/
+    align-items: center;/*centrar de manera vertical*/
+    background-color: white;/*background:linear(to top, blue,yellow)*/
+    border:2px solid black ;
+    border-radius:2px ;
+    box-shadow:2px 2px #C84FD1 ;
+    padding:10px ;
+    width:400px ;/*para que no se estiren demaciado*/
+}
+
+/*#obra2*/
